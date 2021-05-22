@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>UST</title>
+
+	
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style3.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<style>
+    @media screen and (min-width: 676px) {
+        .modal-dialog {
+          max-width: 700px; /* New width for default modal */
+        }
+    }
+</style>
+
+</head>
+
+
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+           <br>
+
+            <ul class="list-unstyled components">
+                
+                <li class="active">
+					
+					<h1 >  <i class="fa fa-fw fa-th-large"></i> UST</h1>
+					<br>
+					<a href="#home"><i class="fa fa-fw fa-user-circle"></i> Home</a>
+                    <a href="#home"><i class="fa fa-fw fa-user-circle"></i> Internet GW Routers</a>
+					<a href="#services"><i class="fa fa-fw fa-feed"></i> WAN Routers</a>
+					<a href="#clients"><i class="fa fa-fw fa-folder-o "></i> Firewalls Devices</a>
+					<a href="#clients"><i class="fa fa-fw fa-diamond"></i> VPN Devices</a>
+					<a href="#contact"><i class="fa fa-fw fa-align-justify"></i> LAN Devices</a>
+					<a href="#contact"><i class="fa fa-fw fa-th-large"></i> Client Details</a>
+					<a href="#contact"><i class="fa fa-fw fa-picture-o"></i> AMC Details</a>
+
+               </ul>
+
+
+            
+        </nav>
+		
+        <!-- Page Content  -->
+		
+		
+        <div id="content">
+		<br>
+		<br>
+			<h1 id="sidebarCollapse"><i  class="fa fa-fw fa-bars heading"></i> UST Network Devices Information System</h1>
+ 
+			<!-- <div class="buttonp">-->
+			<!--<button align="right" type="button" class="btn btn-primary">Add New</button>-->
+  
+			<!--</div>-->
+            
+        
+	
+			<div class="main">
+				<button style="float: right" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add New</button>
+				<br>
+				<br>
+				<input class="searchp"type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Location.." title="Type in a name">
+			
+				<div id="myModal" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+					
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+							
+								<h2 class="modal-title">Add New Device</h2>
+							
+							</div>
+							<form>
+							<div class="form-group">
+								<br>
+								
+								<label style = "margin-left: 20px; for="recipient-name" class="col-form-label">Location:</label>
+								<input style = "margin-left: 30px; type="text"  size="65" id="recipient-name"><br>
+								<label style = "margin-left: 20px; for="recipient-name" class="col-form-label">MGMT_IP:</label>
+								<input style = "margin-left: 25px; type="text"  size="65" id="recipient-name"><br>
+								<label style = "margin-left: 20px; for="recipient-name" class="col-form-label">Public_IP:</label>
+								<input style = "margin-left: 25px; type="text"  size="65" id="recipient-name"><br>
+								<label style = "margin-left: 20px; for="recipient-name" class="col-form-label">Hostname:</label>
+								<input style = "margin-left: 21px; type="text"  size="65" id="recipient-name"><br>
+							</div>
+							</form>
+							<div class="modal-footer">
+							
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button style="float: right" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Save</button>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+	
+	
+	
+			<table id="myTable">
+				<tr class="header">
+					<th style="width:30%;">Location</th>
+					<th style="width:20%;">MGMT_IP</th>
+					<th style="width:30%;">Public_IP</th>
+					<th style="width:50%;">Host-Name</th>
+					<th style="width:30%;">Action</th>
+				</tr>
+				<tr>
+					<td>USA-Nebraska</td>
+					<td>10.92.91.1</td>
+					<td>199.36.119.125/30,35.130.0.42/29</td>
+					<td>JUSRX345-Sidney.NBR</td>
+					<td>
+				
+				
+						<a class="deletec" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+						<a class="editc" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE873;</i></a>
+					</td>
+				</tr>
+				<tr>
+					<td>USA-Nebraska</td>
+					<td>10.92.91.1</td>
+					<td>199.36.119.125/30,35.130.0.42/29</td>
+					<td>JUSRX345-Sidney.NBR</td>
+					<td>
+				
+				
+						<a class="deletec" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+						<a class="editc" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE873;</i></a>
+					</td>
+				</tr>
+								<tr>
+					<td>USA-Nebraska</td>
+					<td>10.92.91.1</td>
+					<td>199.36.119.125/30,35.130.0.42/29</td>
+					<td>JUSRX345-Sidney.NBR</td>
+					<td>
+				
+				
+						<a class="deletec" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+						<a class="editc" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE873;</i></a>
+					</td>
+				</tr>
+								<tr>
+					<td>USA-Nebraska</td>
+					<td>10.92.91.1</td>
+					<td>199.36.119.125/30,35.130.0.42/29</td>
+					<td>JUSRX345-Sidney.NBR</td>
+					<td>
+				
+				
+						<a class="deletec" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+						<a class="editc" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE873;</i></a>
+					</td>
+				</tr>
+								<tr>
+					<td>USA-Nebraska</td>
+					<td>10.92.91.1</td>
+					<td>199.36.119.125/30,35.130.0.42/29</td>
+					<td>JUSRX345-Sidney.NBR</td>
+					<td>
+				
+				
+						<a class="deletec" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+						<a class="editc" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE873;</i></a>
+					</td>
+				</tr>
+								<tr>
+					<td>USA-Nebraska</td>
+					<td>10.92.91.1</td>
+					<td>199.36.119.125/30,35.130.0.42/29</td>
+					<td>JUSRX345-Sidney.NBR</td>
+					<td>
+				
+				
+						<a class="deletec" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+						<a class="editc" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE873;</i></a>
+					</td>
+				</tr>
+								<tr>
+					<td>USA-Nebraska</td>
+					<td>10.92.91.1</td>
+					<td>199.36.119.125/30,35.130.0.42/29</td>
+					<td>JUSRX345-Sidney.NBR</td>
+					<td>
+				
+				
+						<a class="deletec" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+						<a class="editc" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE873;</i></a>
+					</td>
+				</tr>
+								<tr>
+					<td>USA-Nebraska</td>
+					<td>10.92.91.1</td>
+					<td>199.36.119.125/30,35.130.0.42/29</td>
+					<td>JUSRX345-Sidney.NBR</td>
+					<td>
+				
+				
+						<a class="deletec" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+						<a class="editc" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE873;</i></a>
+					</td>
+				</tr>
+								<tr>
+					<td>USA-Nebraska</td>
+					<td>10.92.91.1</td>
+					<td>199.36.119.125/30,35.130.0.42/29</td>
+					<td>JUSRX345-Sidney.NBR</td>
+					<td>
+				
+				
+						<a class="deletec" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+						<a class="editc" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE873;</i></a>
+					</td>
+				</tr>
+								<tr>
+					<td>USA-Nebraska</td>
+					<td>10.92.91.1</td>
+					<td>199.36.119.125/30,35.130.0.42/29</td>
+					<td>JUSRX345-Sidney.NBR</td>
+					<td>
+				
+				
+						<a class="deletec" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+						<a class="editc" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE873;</i></a>
+					</td>
+				</tr>
+								<tr>
+					<td>USA-Nebraska</td>
+					<td>10.92.91.1</td>
+					<td>199.36.119.125/30,35.130.0.42/29</td>
+					<td>JUSRX345-Sidney.NBR</td>
+					<td>
+				
+				
+						<a class="deletec" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+						<a class="editc" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE873;</i></a>
+					</td>
+				</tr>
+								<tr>
+					<td>USA-Nebraska</td>
+					<td>10.92.91.1</td>
+					<td>199.36.119.125/30,35.130.0.42/29</td>
+					<td>JUSRX345-Sidney.NBR</td>
+					<td>
+				
+				
+						<a class="deletec" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+						<a class="editc" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE873;</i></a>
+					</td>
+				</tr>
+				</table>
+			</div>
+			
+	</div>
+	
+	<div class="overlay"></div>
+	 <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<script type="text/javascript">
+
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+    $(document).ready(function () {
+        $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+        });
+
+        $('#dismiss, .overlay').on('click', function () {
+            $('#sidebar').removeClass('active');
+            $('.overlay').removeClass('active');
+        });
+
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').addClass('active');
+            $('.overlay').addClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+    });
+	
+	$(document).ready(function(){
+	$('[data-toggle="tooltip"]').tooltip();
+	var actions = $("table td:last-child").html();
+	// Append table with add row form on add new button click
+    $(".add-new").click(function(){
+		$(this).attr("disabled", "disabled");
+		var index = $("table tbody tr:last-child").index();
+        var row = '<tr>' +
+            '<td><input type="text" class="form-control" name="name" id="name"></td>' +
+            '<td><input type="text" class="form-control" name="department" id="department"></td>' +
+            '<td><input type="text" class="form-control" name="phone" id="phone"></td>' +
+			'<td>' + actions + '</td>' +
+        '</tr>';
+    	$("table").append(row);		
+		$("table tbody tr").eq(index + 1).find(".add, .edit").toggle();
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+	// Add row on add button click
+	$(document).on("click", ".add", function(){
+		var empty = false;
+		var input = $(this).parents("tr").find('input[type="text"]');
+        input.each(function(){
+			if(!$(this).val()){
+				$(this).addClass("error");
+				empty = true;
+			} else{
+                $(this).removeClass("error");
+            }
+		});
+		$(this).parents("tr").find(".error").first().focus();
+		if(!empty){
+			input.each(function(){
+				$(this).parent("td").html($(this).val());
+			});			
+			$(this).parents("tr").find(".add, .edit").toggle();
+			$(".add-new").removeAttr("disabled");
+		}		
+    });
+	// Edit row on edit button click
+	$(document).on("click", ".edit", function(){		
+        $(this).parents("tr").find("td:not(:last-child)").each(function(){
+			$(this).html('<input type="text" class="form-control" value="' + $(this).text() + '">');
+		});		
+		$(this).parents("tr").find(".add, .edit").toggle();
+		$(".add-new").attr("disabled", "disabled");
+    });
+	// Delete row on delete button click
+	$(document).on("click", ".delete", function(){
+        $(this).parents("tr").remove();
+		$(".add-new").removeAttr("disabled");
+    });
+	});
+	
+	$('#myModal').on('shown.bs.modal', function () {
+		$('#myInput').trigger('focus')
+	})
+</script>
+</body>
+	
+</html>
