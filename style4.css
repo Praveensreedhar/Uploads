@@ -96,6 +96,12 @@ span {
     background-color: #f1f1f1;
 }
 
+#myTable th,
+#myTable td {
+    text-align: left;
+    padding: 12px;
+}
+
 #myInput {
     background-image: url('/css/searchicon.png');
     background-position: 10px 10px;
